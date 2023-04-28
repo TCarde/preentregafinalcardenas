@@ -5,7 +5,7 @@ import { useCartContext } from './context/CartContext';
 import { toast } from 'react-toastify';
 
 const Checkout = () => {
-    const {totalPrecio, cart, limpiarCart} = useCartContext()
+    const {totalPrecio, limpiarCart, cart} = useCartContext()
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
 
@@ -14,22 +14,8 @@ const Checkout = () => {
         const datForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datForm)
 
-        const aux = [...cart]
-
-        aux.forEach(prodCarrito => {
-            getProducto(prodCarrito.id).then(prodBDD => {
-                if(prodBDD.stock >= prodCarrito.cant) {
-                    prodBDD.stock -= prodCarrito.cant
-                    updateProducto(prodCarrito.id, prodBDD)
-
-                } else {
-                    console.log("Stock no valido")
-                    
-                }
-            })
-        })
-
-        createOrdenCompra(cliente,totalPrecio(), new Date().toISOString()).then(ordenCompra => {
+                
+        createOrdenCompra(cliente,totalPrecio(), new Date().toISOString(), cart).then(ordenCompra => {
             getOrdenCompra(ordenCompra.id).then(item => {
                 toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`)
                 limpiarCart()
@@ -48,28 +34,20 @@ const Checkout = () => {
         <div className="container" style={{marginTop: "20px"}}>
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
-                    <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
-                    <input type="text" className="form-control" name="nombre" />
+                    <label htmlFor="nombre" className="form-label">Nombre y Apellido</label><br></br>
+                    <input type="text" className="inputForm" name="name" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" name="email" />
+                    <label htmlFor="email" className="form-label">Email</label><br></br>
+                    <input type="email" className="inputForm" name="email" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email2" className="form-label">Repetir Email</label>
-                    <input type="email" className="form-control" name="email2" />
+                    <label htmlFor="celular" className="form-label">Numero telefonico</label><br></br>
+                    <input type="number" className="inputForm" name="phone" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="dni" className="form-label">DNI</label>
-                    <input type="number" className="form-control" name="dni" />
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="celular" className="form-label">Numero telefonico</label>
-                    <input type="number" className="form-control" name="celular" />
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="direccion" className="form-label">Dirección</label>
-                    <input type="text" className="form-control" name="direccion" />
+                    <label htmlFor="direccion" className="form-label">Dirección</label><br></br>
+                    <input type="text" className="inputForm" name="address" />
                 </div>
                 <button type="submit" className="btn btn-primary">Finalizar Compra</button>
             </form>
