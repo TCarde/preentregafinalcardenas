@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fifa 23",
+        "descripcion" : "Fifa 23 PS4",
+        "categoria": "PlayStation",
+        "plataforma": "Play Station 4",
+        "precio": 220000,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/45126449_1?wid=1500&hei=1500&qlt=70", 
+        "stock" : "10"
+    },
+    {
+        "id": 2,
+        "nombre": "Spider-Man",
+        "descripcion" : "Spider-Man PS5",
+        "categoria": "PlayStation",
+        "plataforma": "Play Station 5",
+        "precio": 279900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/10002792_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 3,
+        "nombre": "The Last Of Us",
+        "descripcion" : "The Last Of Us PS5",
+        "categoria": "PlayStation",
+        "plataforma": "Play Station 5",
+        "precio": 209900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/55999427_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 4,
+        "nombre": "God Of War",
+        "descripcion" : "God Of War PS4",
+        "categoria": "PlayStation",
+        "plataforma": "Play Station 4",
+        "precio": 99900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/4940119_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 5,
+        "nombre": "Hit Man",
+        "descripcion" : "Hit Man Xbox One",
+        "categoria": "Xbox",
+        "plataforma": "Xbox One",
+        "precio": 91900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/28607869_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 6,
+        "nombre": "Battlefield",
+        "descripcion" : "Battlefield Xbox One",
+        "categoria": "Xbox",
+        "plataforma": "Xbox One",
+        "precio": 105900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/28607864_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 7,
+        "nombre": "Lego City Undercover",
+        "descripcion" : "Lego City Undercover Xbox One",
+        "categoria": "Xbox",
+        "plataforma": "Xbox One",
+        "precio": 82900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/28607867_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 8,
+        "nombre": "Mario Party Superstars",
+        "descripcion" : "Mario Party Superstars Nintendo Switch",
+        "categoria": "Nintendo",
+        "plataforma": "Nintendo Switch",
+        "precio": 334900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/20527884_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 9,
+        "nombre": "Super Mario 3D World",
+        "descripcion" : "Super Mario 3D World Nintendo Switch",
+        "categoria": "Nintendo",
+        "plataforma": "Nintendo Switch",
+        "precio": 334900,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/12272697_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    },
+    {
+        "id": 10,
+        "nombre": "Legend of Zelda",
+        "descripcion" : "Legend of Zelda Nintendo Switch",
+        "categoria": "Nintendo",
+        "plataforma": "Nintendo Switch",
+        "precio": 329000,
+        "imagen": "https://falabella.scene7.com/is/image/FalabellaCO/3000166_1?wid=1500&hei=1500&qlt=70",
+        "stock" : "10"
+    }
+]
